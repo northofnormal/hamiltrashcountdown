@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="DisplayViewController" customModule="Countdown" customModuleProvider="target">
             <connections>
+                <outlet property="dateLabel" destination="Ypg-eX-tMn" id="z6W-Yg-AEZ"/>
                 <outlet property="textLabel" destination="KkH-EK-PMZ" id="xUO-yg-Nye"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
@@ -36,8 +37,8 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ypg-eX-tMn">
-                    <rect key="frame" x="150" y="109" width="33" height="17"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="100" id="vvq-va-8Zz">
+                    <rect key="frame" x="129" y="109" width="75" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="thinking..." id="vvq-va-8Zz">
                         <font key="font" metaFont="systemBold"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
