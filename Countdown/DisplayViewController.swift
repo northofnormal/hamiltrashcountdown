@@ -9,10 +9,20 @@
 import Cocoa
 
 class DisplayViewController: NSViewController {
+    
+    @IBOutlet var textLabel: NSTextField?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
+}
+
+//MARK: Actions 
+
+extension DisplayViewController {
+    @IBAction func quit(sender: AnyObject) {
+    
+    }
 }
