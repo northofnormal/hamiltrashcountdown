@@ -15,6 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
     let popover = NSPopover()
+    
+    var eventMonitor: EventMonitor?
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         if let button = statusItem.button {
@@ -23,9 +25,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         popover.contentViewController = DisplayViewController(nibName:"DisplayViewController", bundle: nil)
+       
+        eventMonitor = EventMonitor(mask: NSEventMask.LeftMouseDownMask) { [unowned self] event in
+            if self.popover.shown {
+                self.hidePopover(event!)
+            }
+        }
         
-        // save this so you can add a quit button later
-        // menu.addItem(NSMenuItem(title: "Quit Countdown", action: "terminate:", keyEquivalent: "q"))
+        eventMonitor?.start()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

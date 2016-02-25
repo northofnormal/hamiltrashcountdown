@@ -13,6 +13,7 @@
 		97AF235F1C7F44AC00A04FC1 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF235D1C7F44AC00A04FC1 /* DisplayViewController.swift */; };
 		97AF23601C7F44AC00A04FC1 /* DisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97AF235E1C7F44AC00A04FC1 /* DisplayViewController.xib */; };
 		97AF23641C7F470A00A04FC1 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF23631C7F470A00A04FC1 /* Quotes.swift */; };
+		97AF23661C7F799000A04FC1 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF23651C7F799000A04FC1 /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		97AF235D1C7F44AC00A04FC1 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		97AF235E1C7F44AC00A04FC1 /* DisplayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayViewController.xib; sourceTree = "<group>"; };
 		97AF23631C7F470A00A04FC1 /* Quotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quotes.swift; path = ../Quotes.swift; sourceTree = "<group>"; };
+		97AF23651C7F799000A04FC1 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				97AF23521C7F39EB00A04FC1 /* Assets.xcassets */,
 				97AF23541C7F39EB00A04FC1 /* MainMenu.xib */,
 				97AF23571C7F39EB00A04FC1 /* Info.plist */,
+				97AF23651C7F799000A04FC1 /* EventMonitor.swift */,
 			);
 			path = Countdown;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				97AF23511C7F39EB00A04FC1 /* AppDelegate.swift in Sources */,
 				97AF235F1C7F44AC00A04FC1 /* DisplayViewController.swift in Sources */,
 				97AF23641C7F470A00A04FC1 /* Quotes.swift in Sources */,
+				97AF23661C7F799000A04FC1 /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
