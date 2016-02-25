@@ -17,28 +17,38 @@
             <rect key="frame" x="0.0" y="0.0" width="332" height="146"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m0q-PZ-2a6">
+                    <rect key="frame" x="97" y="27" width="138" height="32"/>
+                    <buttonCell key="cell" type="push" title="Quit Countdown" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ul8-hR-JO4">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="KkH-EK-PMZ">
-                    <rect key="frame" x="18" y="102" width="296" height="34"/>
+                    <rect key="frame" x="18" y="65" width="296" height="34"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="&quot;They are dealing with the unimaginable&quot; - It's Quiet Uptown" id="VJx-pA-KZr">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m0q-PZ-2a6">
-                    <rect key="frame" x="97" y="24" width="138" height="32"/>
-                    <buttonCell key="cell" type="push" title="Quit Countdown" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ul8-hR-JO4">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ypg-eX-tMn">
+                    <rect key="frame" x="150" y="109" width="33" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="100" id="vvq-va-8Zz">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <constraints>
-                <constraint firstItem="m0q-PZ-2a6" firstAttribute="top" secondItem="KkH-EK-PMZ" secondAttribute="bottom" constant="50" id="00h-eZ-d6y"/>
-                <constraint firstItem="KkH-EK-PMZ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="L4G-Gg-cvr"/>
+                <constraint firstItem="m0q-PZ-2a6" firstAttribute="top" secondItem="KkH-EK-PMZ" secondAttribute="bottom" constant="10" id="00h-eZ-d6y"/>
+                <constraint firstItem="Ypg-eX-tMn" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="8UZ-BM-iax"/>
+                <constraint firstItem="Ypg-eX-tMn" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="RkM-Ta-AsZ"/>
                 <constraint firstAttribute="trailing" secondItem="KkH-EK-PMZ" secondAttribute="trailing" constant="20" id="U2F-pt-dKT"/>
                 <constraint firstItem="KkH-EK-PMZ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="l0a-P2-YDL"/>
                 <constraint firstItem="m0q-PZ-2a6" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="mYH-DW-5xa"/>
+                <constraint firstItem="KkH-EK-PMZ" firstAttribute="top" secondItem="Ypg-eX-tMn" secondAttribute="bottom" constant="10" id="yDG-3m-qMw"/>
             </constraints>
             <point key="canvasLocation" x="286" y="249"/>
         </customView>
