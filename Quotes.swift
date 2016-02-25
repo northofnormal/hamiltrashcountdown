@@ -44,7 +44,24 @@ struct Quote {
         Quote(lyric: "Love doesn't discriminate Between the sinners And the saints It takes and it takes and it takes And we keep loving anyway", song: "Wait For It"),
         Quote(lyric: "My mother was a genius My father commanded respect", song: "Wait For It"),
         Quote(lyric: "I am the one thing in life I can control I am inimitable I am an original", song: "Wait For It"),
-        Quote(lyric: "I'm not standing still I am lying in wait", song: "Wait For It")
+        Quote(lyric: "I'm not standing still I am lying in wait", song: "Wait For It"),
+        Quote(lyric: "There’s only one way for us to win this Provoke outrage, outright", song: "Stay Alive"),
+        Quote(lyric: "Yeah, he's not the choice I would have gone with He shits the bed at the Battle of Monmouth", song: "Stay Alive"),
+        Quote(lyric: "If they don't, grab a friend, that's your second Your lieutenant when there's reckoning to be reckoned", song: "10 Duel Commandments"),
+        Quote(lyric: "Okay, so we're doing this", song: "10 Duel Commandments"),
+        Quote(lyric: "Leave a note for your next of kin Tell ‘em where you been. Pray that hell or heaven lets you in", song: "10 Duel Commandments"),
+        Quote(lyric: "Go home, Alexander That’s an order from your commander", song: "Meet Me Inside"),
+        Quote(lyric: "Will you relish being a poor man’s wife Unable to provide for your life?", song: "That Would Be Enough"),
+        Quote(lyric: "Oh, let me be a part of the narrative In the story they will write someday", song: "That Would Be Enough"),
+        Quote(lyric: "How does a ragtag volunteer army in need of a shower Somehow defeat a global superpower?", song: "Guns And Ships"),
+        Quote(lyric: "I’m takin this horse by the reins makin’ Redcoats redder with bloodstains", song: "Guns And Ships"),
+        Quote(lyric: "You have no control Who lives who dies who tells your story", song: "History Has Its Eyes On You"),
+        Quote(lyric: "Immigrants. We get the job done.", song: "Yorktown (World Turned Upside Down"),
+        Quote(lyric: "And so the American experiment begins With my friends all scattered to the winds", song: "Yorktown (World Turned Upside Down"),
+        Quote(lyric: "You’re on your own Awesome. Wow Do you have a clue what happens now?", song: "What Comes Next"),
+        Quote(lyric: "You will come of age with our young nation We’ll bleed and fight for you, we’ll make it right for you If we lay a strong enough foundation We’ll pass it on to you, we’ll give the world to you", song: "Dear Theodosia"),
+        Quote(lyric: "How do you write like you’re Running out of time? Write day and night like you’re Running out of time?", song: "Non Stop"),
+        Quote(lyric: "Hamilton wrote the other FIFTY-ONE!", song: "Non Stop")
     ]
 }
 
