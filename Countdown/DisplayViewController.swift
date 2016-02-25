@@ -11,10 +11,14 @@ import Cocoa
 class DisplayViewController: NSViewController {
     
     @IBOutlet var textLabel: NSTextField?
+    
+    let quotes = Quote.all
+    let quoteIndex = 5
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        
+        textLabel?.stringValue = String(quotes[quoteIndex])
     }
     
 }
@@ -22,7 +26,7 @@ class DisplayViewController: NSViewController {
 //MARK: Actions 
 
 extension DisplayViewController {
-    @IBAction func quit(sender: AnyObject) {
-    
+    @IBAction func quitController(sender: AnyObject) {
+        NSApplication.sharedApplication().terminate(sender)
     }
 }
