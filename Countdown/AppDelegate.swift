@@ -21,6 +21,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = NSImage(named: "statusBarIcon")
             button.action = Selector("printLyric:")
         }
+        
+        let menu = NSMenu()
+        menu.addItem(NSMenuItem(title: "Quit Countdown", action: "terminate:", keyEquivalent: "q"))
+        statusItem.menu = menu
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
