@@ -13,12 +13,12 @@ class DisplayViewController: NSViewController {
     @IBOutlet var textLabel: NSTextField?
     
     let quotes = Quote.all
-    let quoteIndex = 5
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textLabel?.stringValue = String(quotes[quoteIndex])
+        let randomQuote = quotes.random()
+        textLabel?.stringValue = String(randomQuote)
     }
     
 }
@@ -28,5 +28,14 @@ class DisplayViewController: NSViewController {
 extension DisplayViewController {
     @IBAction func quitController(sender: AnyObject) {
         NSApplication.sharedApplication().terminate(sender)
+    }
+}
+
+extension Array {
+    // From http://stackoverflow.com/questions/24003191/pick-a-random-element-from-an-array
+    
+    func random() -> Element {
+        let index = Int(arc4random_uniform(UInt32(self.count)))
+        return self[index]
     }
 }
