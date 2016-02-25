@@ -21,8 +21,11 @@ class DisplayViewController: NSViewController {
         
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateCounter", userInfo: nil, repeats: true)
     
-        let randomQuote = quotes.random()
-        textLabel?.stringValue = String(randomQuote)
+        shuffleQuote()
+    }
+    
+    override func viewWillAppear() {
+        shuffleQuote()
     }
 
     func updateCounter() {
@@ -38,6 +41,11 @@ class DisplayViewController: NSViewController {
         
         let timeLeft = curtainDateTime?.timeIntervalSinceNow
         dateLabel?.stringValue = (timeLeft?.time)!
+    }
+    
+    func shuffleQuote() {
+        let randomQuote = quotes.random()
+        textLabel?.stringValue = String(randomQuote)
     }
     
 }
