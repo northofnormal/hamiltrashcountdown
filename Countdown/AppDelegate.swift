@@ -14,27 +14,40 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
-
+    let popover = NSPopover()
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         if let button = statusItem.button {
             button.image = NSImage(named: "statusBarIcon")
-            button.action = Selector("printLyric:")
+            button.action = Selector("togglePopover:")
         }
         
-        let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "Quit Countdown", action: "terminate:", keyEquivalent: "q"))
-        statusItem.menu = menu
+        popover.contentViewController = DisplayViewController(nibName:"DisplayViewController", bundle: nil)
+        
+        // save this so you can add a quit button later
+        // menu.addItem(NSMenuItem(title: "Quit Countdown", action: "terminate:", keyEquivalent: "q"))
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
 
-    func printLyric(sender: AnyObject) {
-        let lyric = "Look around, look around, how lucky we are to be alive right now"
-        print(lyric)
+    func showPopover(sender: AnyObject){
+        if let button = statusItem.button {
+            popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
+        }
     }
-
+    
+    func hidePopover(sender: AnyObject){
+        popover.performClose(sender)
+    }
+    
+    func togglePopover(sender: AnyObject){
+        if popover.shown {
+            hidePopover(sender)
+        } else {
+            showPopover(sender)
+        }
+    }
 }
 
