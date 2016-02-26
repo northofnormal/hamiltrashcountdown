@@ -28,4 +28,13 @@ class PreferencesWindow: NSWindowController {
         NSApp.activateIgnoringOtherApps(true)
     }
     
+    @IBAction func saveButtonPressed(sender: AnyObject) {
+        let curtainDate = datePicker?.dateValue
+        NSUserDefaults.standardUserDefaults().setObject(curtainDate, forKey: "curtainDate")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        print(NSUserDefaults.standardUserDefaults().objectForKey("curtainDate"))
+        
+        self.close()
+    }
 }

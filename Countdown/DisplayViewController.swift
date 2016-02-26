@@ -29,6 +29,13 @@ class DisplayViewController: NSViewController {
     }
 
     func updateCounter() {
+        let startTime = setDate()
+
+        let timeLeft = startTime.timeIntervalSinceNow
+        dateLabel?.stringValue = (timeLeft.time)
+    }
+    
+    func defaultDate() -> NSDate {
         let calendar = NSCalendar.currentCalendar()
         let curtainComponents = NSDateComponents()
         curtainComponents.year = 2016
@@ -37,10 +44,19 @@ class DisplayViewController: NSViewController {
         curtainComponents.hour = 22
         curtainComponents.minute = 00
         curtainComponents.second = 00
-        let curtainDateTime = calendar.dateFromComponents(curtainComponents)
+        if let curtainDateTime = calendar.dateFromComponents(curtainComponents) {
+            return curtainDateTime
+        } else {
+            return NSDate()
+        }
+    }
+    
+    func setDate() -> NSDate {
+        guard let curtainDate = NSUserDefaults.standardUserDefaults().objectForKey("curtainDate") else {
+            return defaultDate()
+        }
         
-        let timeLeft = curtainDateTime?.timeIntervalSinceNow
-        dateLabel?.stringValue = (timeLeft?.time)!
+        return curtainDate as! NSDate
     }
     
     func shuffleQuote() {

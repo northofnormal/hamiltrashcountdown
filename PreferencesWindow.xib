@@ -41,6 +41,16 @@
                             <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES"/>
                         </datePickerCell>
                     </datePicker>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZc-tX-goh">
+                        <rect key="frame" x="206" y="13" width="70" height="32"/>
+                        <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VQc-q2-ghj">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="saveButtonPressed:" target="-2" id="t2f-BE-Zax"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="fLL-yh-rjH" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="VAb-6h-IGH"/>
