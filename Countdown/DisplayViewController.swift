@@ -15,13 +15,13 @@ class DisplayViewController: NSViewController {
     
     let quotes = Quote.all
     var timer = NSTimer()
+    var preferencesWindow: PreferencesWindow?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        preferencesWindow = PreferencesWindow()
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateCounter", userInfo: nil, repeats: true)
-    
-        shuffleQuote()
     }
     
     override func viewWillAppear() {
@@ -55,6 +55,10 @@ class DisplayViewController: NSViewController {
 extension DisplayViewController {
     @IBAction func quitController(sender: AnyObject) {
         NSApplication.sharedApplication().terminate(sender)
+    }
+    
+    @IBAction func changeDate(sender: AnyObject) {
+        preferencesWindow?.showWindow(sender)
     }
 }
 
