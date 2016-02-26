@@ -10,8 +10,14 @@ import Cocoa
 
 class PreferencesWindow: NSWindowController {
     
+    @IBOutlet var datePicker: NSDatePicker?
+    
     override var windowNibName: String {
         return "PreferencesWindow"
+    }
+
+    override func awakeFromNib() {
+        datePicker?.dateValue = NSDate()
     }
 
     override func windowDidLoad() {

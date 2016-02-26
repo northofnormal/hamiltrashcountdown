@@ -6,6 +6,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindow" customModule="Countdown" customModuleProvider="target">
             <connections>
+                <outlet property="datePicker" destination="262-S8-9pT" id="oGz-xm-umz"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -20,15 +21,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLL-yh-rjH">
-                        <rect key="frame" x="184" y="147" width="97" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Look, I'm here! " id="hc9-iQ-FSh">
-                            <font key="font" metaFont="system"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fLL-yh-rjH">
+                        <rect key="frame" x="76" y="233" width="329" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="When will you be in the Room Where It  Happens? " id="hc9-iQ-FSh">
+                            <font key="font" metaFont="systemBold"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="262-S8-9pT">
+                        <rect key="frame" x="156" y="192" width="171" height="27"/>
+                        <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="vJz-UR-rwo">
+                            <font key="font" metaFont="system"/>
+                            <date key="date" timeIntervalSinceReferenceDate="-598608000">
+                                <!--1982-01-12 16:00:00 +0000-->
+                            </date>
+                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES"/>
+                        </datePickerCell>
+                    </datePicker>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="fLL-yh-rjH" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="VAb-6h-IGH"/>
+                    <constraint firstItem="fLL-yh-rjH" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="x1O-Ea-LTL"/>
+                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
