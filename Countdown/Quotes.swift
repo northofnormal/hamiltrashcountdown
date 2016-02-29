@@ -83,7 +83,31 @@ struct Quote {
         Quote(lyric: "Oh can I show you what I'm proudest of? The orphanage", song: "Who Lives Who Dies Who Tells Your Story"),
         Quote(lyric: "Who tells your story", song: "Who Lives Who Dies Who Tells Your Story"),
         Quote(lyric: "I know you are a man of honor I’m so sorry to bother you at home", song: "Say No To This"),
-        Quote(lyric: "But my God, she looks so helpless And her body’s saying, 'hell, yes'", song: "Say No To This")
+        Quote(lyric: "But my God, she looks so helpless And her body’s saying, 'hell, yes'", song: "Say No To This"),
+        Quote(lyric: "They don’t need to know me They don’t like you", song: "Schuyler Defeated"),
+        Quote(lyric: "Should we honor our treaty, King Louis' Head? Uh...do whatever you want, I'm super dead", song: "Cabinet Battle #2"),
+        Quote(lyric: "You're nothing without Washington behind you", song: "Cabinet Battle #2"),
+        Quote(lyric: "I’ll pull the trigger on him, someone load the gun and cock it", song: "Washington On Your Side"),
+        Quote(lyric: "Souther motherfuckin Democratic Republicans", song: "Washington On Your Side"),
+        Quote(lyric: "If I say goodbye, the nation learns to move on It outlives me when I’m gone", song: "One Last Time"),
+        Quote(lyric: "George Washington's going home", song: "One Last Time"),
+        Quote(lyric: "They say George Washington’s yielding his power and stepping away ‘Zat true? I wasn’t aware that was something a person could do", song: "I Know Him"),
+        Quote(lyric: "Hamilton’s a host unto himself. As long as he can hold a pen, he’s a threat. Let’s let him know what we know", song: "The Adams Administration"),
+        Quote(lyric: "Yes, I have reasons for shame But I have not committed treason and sullied my good name", song: "We Know"),
+        Quote(lyric: "I wrote my way out of hell I wrote my way to revolution I was louder than the crack in the bell", song: "Hurricane"),
+        Quote(lyric: "In the eye of a hurricane There is quiet For just a moment", song: "Hurricane"),
+        Quote(lyric: "He’s never gon’ be President now", song: "The Reynolds Pamphlet"),
+        Quote(lyric: "Put what we had aside I’m standing at her side You could never be satisfied God, I hope you’re satisfied", song: "The Reynolds Pamphlet"),
+        Quote(lyric: "You built me palaces out of paragraphs You built cathedrals", song: "Burn"),
+        Quote(lyric: "I’m erasing myself from the narrative", song: "Burn"),
+        Quote(lyric: "The scholars say I got the same virtuosity and brains as my pops! The ladies say my brain’s not where the resemblance stops!", song: "Blow Us All Away"),
+        Quote(lyric: "Everything is legal in New Jersey", song: "Blow Us All Away"),
+        Quote(lyric: "You changed the melody every time", song: "Stay Alive (Reprise)"),
+        Quote(lyric: "John Adams shat the bed. I love the guy, but he’s in traction", song: "The Election of 1800"),
+        Quote(lyric: "It’s eighteen hundred, ladies, tell your husbands: vote for Burr!", song: "The Election of 1800"),
+        Quote(lyric: "Hey, Burr, when you see Hamilton, thank him for the endorsement", song: "The Election of 1800"),
+        Quote(lyric: "Here’s an itemized list of thirty years of disagreements", song: "Your Obedient Servant"),
+        Quote(lyric: "I have the honor to be Your Obedient Servant", song: "Your Obedient Servant")
     ]
 }
 
