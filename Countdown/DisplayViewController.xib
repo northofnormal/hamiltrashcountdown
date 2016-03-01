@@ -37,8 +37,8 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="szH-ba-Sif">
-                    <rect key="frame" x="251" y="13" width="67" height="32"/>
-                    <buttonCell key="cell" type="push" title="date" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pmk-ie-BEi">
+                    <rect key="frame" x="199" y="13" width="119" height="32"/>
+                    <buttonCell key="cell" type="push" title="Change Date" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pmk-ie-BEi">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
